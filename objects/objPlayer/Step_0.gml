@@ -1,8 +1,7 @@
 //Get player input
-leftKey = keyboard_check(vk_left);
-rightKey = keyboard_check(vk_right);
+leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
+rightKey = keyboard_check(vk_right) || keyboard_check(ord("D"));
 jumpKey = keyboard_check_pressed(vk_space);
-leftKey = keyboard_check(vk_left);
 
 //Calculate moviment
 var moveHorizontal = rightKey - leftKey;
@@ -11,7 +10,7 @@ horizontalSpeed = moveHorizontal * walkSpeed;
 
 verticalSpeed = verticalSpeed + playerGravity;
 if place_meeting(x, y+1, objWall) && (jumpKey) {
-	
+	 
 	verticalSpeed = -7;
 
 }
