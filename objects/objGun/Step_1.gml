@@ -1,6 +1,7 @@
 x = objPlayer.x;
 y = objPlayer.y + 10;
 
+//Check if user use keyboard or gamepad
 if(objPlayer.controller == 0) {
 	image_angle = point_direction(x, y, mouse_x, mouse_y);
 } else {
@@ -12,6 +13,7 @@ if(objPlayer.controller == 0) {
 	image_angle = controllerAngle;
 }
 
+//shoot bullets with some delay and add some recoil to gun
 firingDelay = firingDelay - 1;
 recoil = max(0, recoil - 1);
 if((mouse_check_button(mb_left)) || gamepad_button_check(0, gp_shoulderrb)) && (firingDelay < 0) {
@@ -19,6 +21,7 @@ if((mouse_check_button(mb_left)) || gamepad_button_check(0, gp_shoulderrb)) && (
 	firingDelay = 5;
 	with(instance_create_layer(x, y, "Bullets", objBullet)) {
 		speed = 25;
+		//add some spread to bullet angle
 		direction = other.image_angle + irandom_range(-3,3);
 		image_angle = direction;
 	}
@@ -27,6 +30,7 @@ if((mouse_check_button(mb_left)) || gamepad_button_check(0, gp_shoulderrb)) && (
 x = x + lengthdir_x(recoil, image_angle);
 y = y + lengthdir_x(recoil, image_angle);
 
+//invert sprite when change gun side
 if(image_angle > 90) && (image_angle < 270) {
 	image_yscale = -1;
 } else {

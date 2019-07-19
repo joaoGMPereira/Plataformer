@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2de61cef-156f-40c2-a80e-296e940dbea5",
+            "Value": {
+                "id": "7ae5cbdc-e41e-4b2c-9cf0-76ba4dc99a00",
+                "resourcePath": "sprites\/sprTiles\/sprTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2f0fab8a-d002-47f8-a47b-13f62da21b1f",
             "Value": {
                 "id": "a21d8dc6-535f-449e-b6bc-3e6c24809833",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "72d04e5d-22eb-470a-b311-f4e1d27cf328",
+            "Value": {
+                "id": "29ed97cf-f760-4d54-97ba-c77160de88d9",
+                "resourcePath": "tilesets\/tileBackground\/tileBackground.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "7b6da0cc-9e14-4536-ad77-e998d6143aaa",
             "Value": {
                 "id": "db11f704-c3cd-4490-bc48-f373d698bb54",
@@ -196,6 +212,14 @@
                 "id": "91813f0d-d86a-43bd-9122-abe18346b2f1",
                 "resourcePath": "views\/a37453ce-5d56-450c-ad45-0c3c8b0059aa.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b5c15158-e3ce-4f0f-a4e7-8e8d4fbecd85",
+            "Value": {
+                "id": "507da14f-67cd-441d-b50f-e2b6056a385f",
+                "resourcePath": "objects\/objCamera\/objCamera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
