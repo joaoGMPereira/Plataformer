@@ -7,7 +7,7 @@ if(place_meeting(x+horizontalSpeed, y, objWall)) {
 	while(!place_meeting(x+sign(horizontalSpeed), y, objWall)) {
 		x = x + sign(horizontalSpeed)
 	}
-	horizontalSpeed = 0;
+	horizontalSpeed = -horizontalSpeed;
 }
 x = x + horizontalSpeed;
 
