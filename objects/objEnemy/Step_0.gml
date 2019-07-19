@@ -1,5 +1,5 @@
 
-verticalSpeed = verticalSpeed + playerGravity;
+verticalSpeed = verticalSpeed + enemyGravity;
 
 //HorizontalCollision
 if(place_meeting(x+horizontalSpeed, y, objWall)) {

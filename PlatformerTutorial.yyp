@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "70a99fa8-448e-4f8d-92f8-d1d434c6bb05",
+            "Value": {
+                "id": "1fe459b0-e4c9-4789-84cd-984eab6b4ccc",
+                "resourcePath": "shaders\/shWhite\/shWhite.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "7b6da0cc-9e14-4536-ad77-e998d6143aaa",
             "Value": {
                 "id": "db11f704-c3cd-4490-bc48-f373d698bb54",
