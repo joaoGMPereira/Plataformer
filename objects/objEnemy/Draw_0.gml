@@ -1,5 +1,6 @@
 draw_self()
 
+//set flash shader to enemy
 if(flash > 0) {
 	flash--;
 	shader_set(shWhite);

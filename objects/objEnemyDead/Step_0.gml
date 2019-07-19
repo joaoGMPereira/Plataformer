@@ -1,3 +1,4 @@
+// animate enemyDead sprites
 if(done == 0) {
 	verticalSpeed = verticalSpeed + enemyDeadGravity;
 
