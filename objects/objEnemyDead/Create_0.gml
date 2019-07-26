@@ -4,3 +4,6 @@ enemyDeadGravity = 0.3;
 done = 0;
 
 image_speed = 0;
+
+//Shake Screen When shoot
+scriptScreenShake(6,25);

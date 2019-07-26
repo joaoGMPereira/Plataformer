@@ -19,6 +19,8 @@ recoil = max(0, recoil - 1);
 if((mouse_check_button(mb_left)) || gamepad_button_check(0, gp_shoulderrb)) && (firingDelay < 0) {
 	recoil = 4;
 	firingDelay = 5;
+	//Shake Screen When shoot
+	scriptScreenShake(2,10);
 	with(instance_create_layer(x, y, "Bullets", objBullet)) {
 		speed = 25;
 		//add some spread to bullet angle

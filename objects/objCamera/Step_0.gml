@@ -11,8 +11,20 @@ if(instance_exists(follow)) {
 x += (xTo - x)/ 25;
 y += (yTo - y)/ 25;
 
-x = clamp(x, viewWidthHalf, room_width - viewWidthHalf);
-y = clamp(y, viewHeightHalf, room_height - viewHeightHalf);
+x = clamp(x, viewWidthHalf + shakeBuffer, room_width - viewWidthHalf - shakeBuffer);
+y = clamp(y, viewHeightHalf + shakeBuffer, room_height - viewHeightHalf - shakeBuffer);
 
+//Shake Camera
+
+x += random_range(-shakeRemain, shakeRemain);
+y += random_range(-shakeRemain, shakeRemain);
+shakeRemain = max(0, shakeRemain - ((1/shakeDuration)*shakeMagnitude));
 //Update camera view
 camera_set_view_pos(camera, x - viewWidthHalf, y - viewHeightHalf);
+
+if(layer_exists("Mountains")) {
+	layer_x("Mountains", x/2);
+}
+if(layer_exists("Trees")) {
+	layer_x("Trees", x/4);
+}
