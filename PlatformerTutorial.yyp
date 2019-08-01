@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2614f1b3-276e-4d17-a614-6c8f1f2de056",
+            "Value": {
+                "id": "83d4ac89-b475-4fe0-a3c2-5712de05d037",
+                "resourcePath": "sounds\/snDeath\/snDeath.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "2ba50417-ec22-4fd9-8d73-72d8edfe4a73",
             "Value": {
                 "id": "33b3184e-90dc-438a-ad20-2f3420001f67",
@@ -151,11 +159,43 @@
             }
         },
         {
+            "Key": "3acfa60e-ad85-43fb-bf65-52d87b7b997d",
+            "Value": {
+                "id": "b7d64c87-b690-4b33-abf4-6b5c8f827abd",
+                "resourcePath": "sounds\/footstep2\/footstep2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "3fe1b94b-83bf-4a4a-a450-eca7475c5967",
+            "Value": {
+                "id": "1ed94ea3-e4e0-4b3a-b2f5-6d14f7483b8f",
+                "resourcePath": "objects\/objPlayerDead\/objPlayerDead.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4c2857b9-3614-4560-a00d-885be7d60012",
             "Value": {
                 "id": "7245cfc9-c460-4055-b841-4c1289299475",
                 "resourcePath": "rooms\/roomMenu\/roomMenu.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "51677689-28da-4507-8256-c164851f56d6",
+            "Value": {
+                "id": "541ca042-87cc-409d-aaa5-94a5b6f6877a",
+                "resourcePath": "sounds\/footstep1\/footstep1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "5c78f186-30d3-404e-b807-14ad8b2b1747",
+            "Value": {
+                "id": "7458479b-ef03-462a-9620-8fd2a77a7407",
+                "resourcePath": "sprites\/sprPlayerDead\/sprPlayerDead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -263,10 +303,34 @@
             }
         },
         {
+            "Key": "84cbd1a5-6a94-4191-86cc-db5847931d1f",
+            "Value": {
+                "id": "fdb844ae-bda1-462a-b119-70e4e17af68f",
+                "resourcePath": "sounds\/snLanding\/snLanding.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8a8cd12f-4291-4a38-bb6f-1c5324185990",
             "Value": {
                 "id": "42867fb6-3aaf-41db-b076-d39ee13a3c2b",
                 "resourcePath": "sprites\/sprEnemy\/sprEnemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8fecb103-807d-4ad5-87eb-fd595c2c4aea",
+            "Value": {
+                "id": "c1345fd8-338c-4a0f-ac9e-8afb9d4adc49",
+                "resourcePath": "sounds\/snShoot\/snShoot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "96911646-769a-4af7-aaf9-a116ab44978a",
+            "Value": {
+                "id": "312414e1-0df0-42a2-8eb3-962e405f5995",
+                "resourcePath": "sprites\/sprLifeBar\/sprLifeBar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -292,6 +356,14 @@
                 "id": "507da14f-67cd-441d-b50f-e2b6056a385f",
                 "resourcePath": "objects\/objCamera\/objCamera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b5d532a5-d307-4257-8a70-33b9d42747da",
+            "Value": {
+                "id": "2e9d9fbb-3626-44c7-851a-a2174914290d",
+                "resourcePath": "sounds\/footstep3\/footstep3.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -372,6 +444,14 @@
                 "id": "70c0cd96-2eed-4cfe-a4fc-8998855c37e5",
                 "resourcePath": "rooms\/room0\/room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e4cbd782-872a-42c0-8c58-fa5f06da2667",
+            "Value": {
+                "id": "3cc2b77e-2c76-4e91-a26c-2bd995d4dfe7",
+                "resourcePath": "sounds\/footstep4\/footstep4.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -16,50 +16,6 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "fe67c7e4-2f38-44c0-a264-e0d9bb49da52",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "2f0fab8a-d002-47f8-a47b-13f62da21b1f",
-            "compositeImage": {
-                "id": "3dce615b-2e33-46cd-b3bc-3cfe8150c2d5",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "fe67c7e4-2f38-44c0-a264-e0d9bb49da52",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "76a01553-c184-4a45-8726-8c418e392e31",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "fe67c7e4-2f38-44c0-a264-e0d9bb49da52",
-                    "LayerId": "f4d80d61-2a94-4519-821f-8f44ceea7953"
-                }
-            ]
-        },
-        {
-            "id": "4dd9b9ff-ef73-4a0c-b766-f3cefc9e71a7",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "2f0fab8a-d002-47f8-a47b-13f62da21b1f",
-            "compositeImage": {
-                "id": "85dd6a1e-9252-4c2c-8e95-aefad2989509",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "4dd9b9ff-ef73-4a0c-b766-f3cefc9e71a7",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "6d225098-b661-4d01-8e97-7f7a57c2b152",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "4dd9b9ff-ef73-4a0c-b766-f3cefc9e71a7",
-                    "LayerId": "f4d80d61-2a94-4519-821f-8f44ceea7953"
-                }
-            ]
-        },
-        {
             "id": "cabbebfc-5063-4644-87d8-704f89f6bfef",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
@@ -99,6 +55,50 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "922a7c69-1df0-4434-b208-2a5b27c0c631",
+                    "LayerId": "f4d80d61-2a94-4519-821f-8f44ceea7953"
+                }
+            ]
+        },
+        {
+            "id": "4dd9b9ff-ef73-4a0c-b766-f3cefc9e71a7",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "2f0fab8a-d002-47f8-a47b-13f62da21b1f",
+            "compositeImage": {
+                "id": "85dd6a1e-9252-4c2c-8e95-aefad2989509",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "4dd9b9ff-ef73-4a0c-b766-f3cefc9e71a7",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "6d225098-b661-4d01-8e97-7f7a57c2b152",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "4dd9b9ff-ef73-4a0c-b766-f3cefc9e71a7",
+                    "LayerId": "f4d80d61-2a94-4519-821f-8f44ceea7953"
+                }
+            ]
+        },
+        {
+            "id": "fe67c7e4-2f38-44c0-a264-e0d9bb49da52",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "2f0fab8a-d002-47f8-a47b-13f62da21b1f",
+            "compositeImage": {
+                "id": "3dce615b-2e33-46cd-b3bc-3cfe8150c2d5",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "fe67c7e4-2f38-44c0-a264-e0d9bb49da52",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "76a01553-c184-4a45-8726-8c418e392e31",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "fe67c7e4-2f38-44c0-a264-e0d9bb49da52",
                     "LayerId": "f4d80d61-2a94-4519-821f-8f44ceea7953"
                 }
             ]

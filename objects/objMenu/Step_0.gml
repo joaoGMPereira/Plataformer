@@ -18,6 +18,7 @@ if(menuControl) {
 		menuCommitted = menuCursor;
 		scriptScreenShake(4, 30);
 		menuControl = false
+		audio_play_sound(snDeath, 10, false);
 	}
 }
 

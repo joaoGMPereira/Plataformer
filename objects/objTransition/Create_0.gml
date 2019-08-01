@@ -1,4 +1,4 @@
-///@desc Size variablesand mode setup
+///@desc Size variables and mode setup
 
 width = display_get_width();
 height = display_get_height();

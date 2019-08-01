@@ -19,6 +19,8 @@ recoil = max(0, recoil - 1);
 if((mouse_check_button(mb_left)) || gamepad_button_check(0, gp_shoulderrb)) && (firingDelay < 0) {
 	recoil = 4;
 	firingDelay = 5;
+	audio_sound_pitch(snShoot, choose(0.8, 1.0, 1.2, 1.4));
+	audio_play_sound(snShoot,5,false);
 	//Shake Screen When shoot
 	scriptScreenShake(2,10);
 	with(instance_create_layer(x, y, "Bullets", objBullet)) {

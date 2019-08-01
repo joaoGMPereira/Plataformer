@@ -4,3 +4,5 @@ playerGravity = 0.3;
 walkSpeed = 4;
 controller = 0;
 hasControl = 1;
+
+

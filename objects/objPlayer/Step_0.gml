@@ -72,6 +72,10 @@ if(!place_meeting(x, y+1, objWall)) {
 	//change sprites frame checking if player is in the air.
 	if(sign(verticalSpeed) > 0) image_index = 0; else image_index = 1;
 } else {
+	if(sprite_index == sprPlayerJump) {
+		audio_sound_pitch(snLanding, choose(0.8, 1.0, 1.2, 1.4));
+		audio_play_sound(snLanding, 6, false);
+	}
 	//Check if is running or not
 	image_speed = 1;
 	if(horizontalSpeed == 0) {
@@ -82,6 +86,8 @@ if(!place_meeting(x, y+1, objWall)) {
 }
 //Check if is running to left or right
 if (horizontalSpeed != 0) image_xscale = sign(horizontalSpeed);
+
+
 
 
 
