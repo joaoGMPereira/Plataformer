@@ -31,18 +31,23 @@ if(hasControl) {
 
 #endregion
 
-//Calculate moviment
+#region //Calculate moviment
 var moveHorizontal = rightKey - leftKey;
 
 horizontalSpeed = moveHorizontal * walkSpeed;
 
 verticalSpeed = verticalSpeed + playerGravity;
-if place_meeting(x, y+1, objWall) && (jumpKey) {
+//Jumping
+canJump -= 1;
+if (canJump > 0) && (jumpKey) {
 	 
 	verticalSpeed = -7;
+	canJump = 0;
 
 }
+#endregion
 
+#region //Collide and move
 //HorizontalCollision
 if(place_meeting(x+horizontalSpeed, y, objWall)) {
 	//Move player to the horizontal until player collide to wall
@@ -62,8 +67,9 @@ if(place_meeting(x, y+verticalSpeed, objWall)) {
 	verticalSpeed = 0;
 }
 y = y + verticalSpeed;
+#endregion
 
-//Animations
+#region Animations
 //check if player isnt colliding to the wall
 if(!place_meeting(x, y+1, objWall)) {
 	//change to player sprites Jump
@@ -72,6 +78,7 @@ if(!place_meeting(x, y+1, objWall)) {
 	//change sprites frame checking if player is in the air.
 	if(sign(verticalSpeed) > 0) image_index = 0; else image_index = 1;
 } else {
+	canJump = 10;
 	if(sprite_index == sprPlayerJump) {
 		audio_sound_pitch(snLanding, choose(0.8, 1.0, 1.2, 1.4));
 		audio_play_sound(snLanding, 6, false);
@@ -87,7 +94,7 @@ if(!place_meeting(x, y+1, objWall)) {
 //Check if is running to left or right
 if (horizontalSpeed != 0) image_xscale = sign(horizontalSpeed);
 
-
+#endregion
 
 
 
