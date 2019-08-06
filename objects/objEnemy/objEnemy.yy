@@ -33,6 +33,16 @@
             "enumb": 1,
             "eventtype": 3,
             "m_owner": "38079341-8b46-40b7-9655-cc6c3adb793e"
+        },
+        {
+            "id": "27613260-8f28-48d4-a1b5-61acf40c61b1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "38079341-8b46-40b7-9655-cc6c3adb793e"
         }
     ],
     "maskSpriteId": "be886437-8977-4323-8672-59e1979e6ce3",
@@ -162,6 +172,20 @@
             "resourceFilter": 1023,
             "value": "False",
             "varName": "grounded",
+            "varType": 3
+        },
+        {
+            "id": "0c06c539-db06-4a08-acaa-249e6dbdb8ae",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "hasWeapon",
             "varType": 3
         }
     ],

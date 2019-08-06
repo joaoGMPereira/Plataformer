@@ -84,7 +84,9 @@ if(!place_meeting(x, y+1, objWall)) {
 		audio_play_sound(snLanding, 6, false);
 		repeat(5) {
 			with(instance_create_layer(x, bbox_bottom, "Bullets", objDust)) {
+				scriptDrawDust(id, random_range(0.5, 1), random_range(0, 6), random_range(-2, 2), random_range(-2, 2), choose(1, -1), choose(1, -1));
 				verticalSpeed = 0;
+				
 			}
 		}
 	}
@@ -95,6 +97,7 @@ if(!place_meeting(x, y+1, objWall)) {
 	} else {
 		repeat(5) {
 			with(instance_create_layer(x, bbox_bottom, "Bullets", objDust)) {
+				scriptDrawDust(id, random_range(0.5, 1), random_range(6, 11), random_range(-2, 2), random_range(-2, 2), choose(1, -1), choose(1, -1));
 				verticalSpeed = 0;
 			}
 		}
@@ -102,9 +105,7 @@ if(!place_meeting(x, y+1, objWall)) {
 	}
 }
 //Check if is running to left or right
-if (horizontalSpeed != 0) {
-	image_xscale = sign(horizontalSpeed);
-}
+if (horizontalSpeed != 0) image_xscale = sign(horizontalSpeed)
 
 #endregion
 
