@@ -37,7 +37,7 @@
     ],
     "maskSpriteId": "be886437-8977-4323-8672-59e1979e6ce3",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "b2f8f669-79cf-44e3-9198-dd1fbd90334e",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -106,34 +106,6 @@
             "resourceFilter": 1023,
             "value": "walkSpeed",
             "varName": "horizontalSpeed",
-            "varType": 0
-        },
-        {
-            "id": "bd5412b3-badf-4a27-8936-a6bdddd9dd27",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "4",
-            "varName": "hp",
-            "varType": 0
-        },
-        {
-            "id": "87d4a068-6aa8-4e65-a03b-a0ee2284dcce",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "flash",
             "varType": 0
         },
         {

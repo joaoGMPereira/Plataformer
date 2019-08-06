@@ -82,17 +82,29 @@ if(!place_meeting(x, y+1, objWall)) {
 	if(sprite_index == sprPlayerJump) {
 		audio_sound_pitch(snLanding, choose(0.8, 1.0, 1.2, 1.4));
 		audio_play_sound(snLanding, 6, false);
+		repeat(5) {
+			with(instance_create_layer(x, bbox_bottom, "Bullets", objDust)) {
+				verticalSpeed = 0;
+			}
+		}
 	}
 	//Check if is running or not
 	image_speed = 1;
 	if(horizontalSpeed == 0) {
 		sprite_index = sprPlayer;
 	} else {
+		repeat(5) {
+			with(instance_create_layer(x, bbox_bottom, "Bullets", objDust)) {
+				verticalSpeed = 0;
+			}
+		}
 		sprite_index = sprPlayerRun;
 	}
 }
 //Check if is running to left or right
-if (horizontalSpeed != 0) image_xscale = sign(horizontalSpeed);
+if (horizontalSpeed != 0) {
+	image_xscale = sign(horizontalSpeed);
+}
 
 #endregion
 
