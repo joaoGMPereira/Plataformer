@@ -7,6 +7,6 @@ var titleWidth = string_width(healthBarTitle);
 var titleHeight = string_height(healthBarTitle);
 draw_set_color(c_white);
 draw_set_font(fMenu);
-draw_text(60, 50, "Life ");
+draw_text(titleWidth + 10, titleHeight + 25, "Life ");
 
-draw_healthbar(60, 20, 160, 40, pc, c_black, c_red, c_lime, 0, true, false);
+draw_healthbar(10 + titleWidth, 30, titleWidth + 110, 50, pc, c_black, c_red, c_lime, 0, true, false);

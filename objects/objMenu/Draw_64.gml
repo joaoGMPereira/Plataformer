@@ -27,4 +27,8 @@ for(var countItems = 0; countItems < menuItems; countItems++) {
 	//set text white
 	draw_set_color(textColor);
 	draw_text(xx, yy, txt);
+	
 }
+
+draw_set_color(c_black);
+draw_rectangle(guiWidth, guiHeight -200, guiWidth + 900, guiHeight, false);

@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "678debe9-a1f6-4969-b62c-c7d7af6c9a6d",
+            "Value": {
+                "id": "93f8c6a7-afa9-4617-a4ec-a1991d577ab8",
+                "resourcePath": "objects\/objRecovery\/objRecovery.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "67b88fbb-b17b-40f2-9d47-e611a89cb342",
             "Value": {
                 "id": "2b2f147b-3e6a-4be4-b84b-8ce7874004de",
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "9e0bf2f7-becb-4977-8e53-054f38df4135",
+            "Value": {
+                "id": "0f18b39e-7cf3-4d1f-a255-317d2f8adbed",
+                "resourcePath": "sprites\/sprRecovery\/sprRecovery.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a37453ce-5d56-450c-ad45-0c3c8b0059aa",
             "Value": {
                 "id": "91813f0d-d86a-43bd-9122-abe18346b2f1",
@@ -484,6 +500,30 @@
                 "id": "2f3defc9-f1d1-42cc-8493-fdace3e74767",
                 "resourcePath": "views\/a408d18b-973f-453b-97e6-002941a98db3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a5dce420-d643-4918-a919-57a7858bd7eb",
+            "Value": {
+                "id": "c557bf37-84c1-46b5-9bda-44baed915d9c",
+                "resourcePath": "objects\/objGame\/objGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a60c3dd1-6f23-4117-9d28-c7727c13ee90",
+            "Value": {
+                "id": "72879d7c-c419-4a18-849c-ee1f5a9b4fe9",
+                "resourcePath": "sprites\/sprDebris\/sprDebris.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ae21258d-fd7c-43ec-b85f-48aea6cc2034",
+            "Value": {
+                "id": "f22c8874-b44a-43a3-bf3e-2055a84f0a32",
+                "resourcePath": "objects\/objDebris\/objDebris.yy",
+                "resourceType": "GMObject"
             }
         },
         {

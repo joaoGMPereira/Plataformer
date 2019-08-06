@@ -7,11 +7,11 @@ guiHeight = display_get_gui_height();
 guiMargin = 32;
 
 //First Position of menu
-menuX = guiWidth + 300;
-menuY = guiHeight - guiMargin + 100;
+menuX = guiWidth + 200;
+menuY = guiHeight - guiMargin;
 
 //Position that menu will stop moviment
-menuXTarget = guiWidth - guiMargin + 100;
+menuXTarget = guiWidth - guiMargin;
 //Velocity of menu move to first position to target position
 menuSpeed = 25;
 menuFont = fMenu;

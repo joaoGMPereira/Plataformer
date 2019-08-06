@@ -19,7 +19,7 @@ if(menuControl) {
 	
 	//move menu to out of room, shake camera
 	if(keyboard_check_pressed(vk_enter)) {
-		menuXTarget = guiWidth + 300;
+		menuXTarget = guiWidth + 200;
 		menuCommitted = menuCursor;
 		scriptScreenShake(4, 30);
 		menuControl = false
@@ -32,7 +32,7 @@ if(menuControl) {
 		menuCursor = (menuY - mouseYGui) div(menuItemHeight * 1.5)
 		//when press left button select item
 		if(mouse_check_button_pressed(mb_left)) {
-			menuXTarget = guiWidth + 300;
+			menuXTarget = guiWidth + 200;
 			menuCommitted = menuCursor;
 			scriptScreenShake(4, 30);
 			menuControl = false
