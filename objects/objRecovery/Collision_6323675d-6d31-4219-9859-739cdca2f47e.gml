@@ -6,10 +6,8 @@ if(countdown <= 0) {
 	repeat(5) {
 			instance_create_layer(x, y, "Instances", objDebris);
 	}
-	with(other) {
-		hp = hp + 5;
-		if hp >= maxHP {
-			hp = maxHP;
-		}
+	global.playerHP = global.playerHP + 5;
+	if global.playerHP >= global.playerMaxHP {
+		global.playerHP = global.playerMaxHP;
 	}
 }
