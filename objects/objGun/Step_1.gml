@@ -14,25 +14,29 @@ if(objPlayer.controller == 0) {
 }
 #endregion
 
-#region//shoot bullets with some delay and add some recoil to gun
-firingDelay = firingDelay - 1;
-if((mouse_check_button(mb_left)) || gamepad_button_check(0, gp_shoulderrb)) && (firingDelay < 0) {
-	recoil = 4;
-	firingDelay = 5;
-	//Shake Screen When shoot
-	scriptScreenShake(2,10);
-	audio_sound_pitch(snShoot, choose(0.8, 1.0, 1.2, 1.4));
-	audio_play_sound(snShoot,5,false);
-	with(instance_create_layer(x, y, "Bullets", objBullet)) {
-		bulletSpeed = 25;
-		//add some spread to bullet angle
-		direction = other.image_angle + irandom_range(-3,3);
-		image_angle = direction;
+#region//shoot bullets with some delay
+	firingDelay = firingDelay - 1;
+	if((mouse_check_button(mb_left)) || gamepad_button_check(0, gp_shoulderrb)) && (firingDelay < 0) {
+		recoil = 4;
+		firingDelay = 5;
+		//Shake Screen When shoot
+		scriptScreenShake(2,10);
+		audio_sound_pitch(snShoot, choose(0.8, 1.0, 1.2, 1.4));
+		audio_play_sound(snShoot,5,false);
+		with(instance_create_layer(x, y, "Bullets", objBullet)) {
+			bulletSpeed = 25;
+			//add some spread to bullet angle
+			direction = other.image_angle + irandom_range(-3,3);
+			image_angle = direction;
+		}
 	}
-}
-recoil = max(0, recoil - 1);
-x = x + lengthdir_x(recoil, image_angle);
-y = y + lengthdir_x(recoil, image_angle);
+	
+	#region //add some recoil to gun
+	recoil = max(0, recoil - 1);
+	x = x + lengthdir_x(recoil, image_angle);
+	y = y + lengthdir_x(recoil, image_angle);
+	#endregion
+
 #endregion
 
 #region //invert sprite when change gun side

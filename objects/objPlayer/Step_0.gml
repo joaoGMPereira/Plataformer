@@ -1,4 +1,4 @@
-#region//Get player input
+#region //Get player input
 if(hasControl) {
 	leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
 	rightKey = keyboard_check(vk_right) || keyboard_check(ord("D"));
