@@ -5,4 +5,5 @@ walkSpeed = 4;
 controller = 0;
 hasControl = 1;
 canJump = 0;
-
+invincibleTimer = 30;
+invincible = false;
