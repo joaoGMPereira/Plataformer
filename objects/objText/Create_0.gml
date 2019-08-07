@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 textSpeed = 0.25;
 letters = 0;
 text = "This is a test string!\nSecond line!";

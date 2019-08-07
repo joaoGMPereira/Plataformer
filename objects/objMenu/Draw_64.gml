@@ -1,7 +1,7 @@
 /// @desc Draw Menu
 
 //Set font and position of menu
-draw_set_font(fMenu);
+draw_set_font(menuFont);
 draw_set_halign(fa_right);
 draw_set_valign(fa_bottom);
 

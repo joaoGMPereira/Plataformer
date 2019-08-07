@@ -1,4 +1,4 @@
-///@description? Update Camera
+///@desc Update Camera
 
 //Update destination
 if(instance_exists(follow)) {
@@ -11,7 +11,6 @@ if(instance_exists(follow)) {
 }
 
 //Update object position
-
 x += (xTo - x)/ 25;
 y += (yTo - y)/ 25;
 
@@ -19,10 +18,10 @@ x = clamp(x, viewWidthHalf + shakeBuffer, room_width - viewWidthHalf - shakeBuff
 y = clamp(y, viewHeightHalf + shakeBuffer, room_height - viewHeightHalf - shakeBuffer);
 
 //Shake Camera
-
 x += random_range(-shakeRemain, shakeRemain);
 y += random_range(-shakeRemain, shakeRemain);
 shakeRemain = max(0, shakeRemain - ((1/shakeDuration)*shakeMagnitude));
+
 //Update camera view
 camera_set_view_pos(camera, x - viewWidthHalf, y - viewHeightHalf);
 

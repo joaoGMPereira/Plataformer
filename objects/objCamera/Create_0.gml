@@ -1,4 +1,4 @@
-///@description? Setup Camera
+///@desc Setup Camera
 camera = view_camera[0];
 follow = objPlayer;
 

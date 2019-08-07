@@ -32,6 +32,7 @@ if(global.playerHP <= 0) {
 	if(sign(horizontalSpeed) != 0) {
 		image_xscale = sign(horizontalSpeed);
 	}
+	global.kills -= global.killsThisRoom;
 }
 #endregion
 	

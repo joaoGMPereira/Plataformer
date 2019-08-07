@@ -13,5 +13,12 @@ if(hp <= 0) {
 	with(myGun) {
 		instance_destroy();
 	}
+	if(instance_exists(objPlayer)) {
+		global.kills++;
+		global.killsThisRoom++;
+		with(objGame) {
+			killTextScale = 2;
+		}
+	}
 	instance_destroy();
 }

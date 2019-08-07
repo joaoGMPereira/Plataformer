@@ -1,7 +1,9 @@
 #region //Collide with Enemy, and invincible timer
-if invincibleTimer != 120 {
-	invincibleTimer = 120;
-	invincible = false;
+if(global.hasGun == true) {
+	if invincibleTimer != 10 {
+		invincibleTimer = 10;
+		invincible = false;
+	}
+	scriptKillPlayer(invincibleTimer);
 }
-scriptKillPlayer(invincibleTimer);
 #endregion

@@ -51,6 +51,8 @@ if(menuX > guiWidth + 150) && (menuCommitted != -1) {
 			} else {
 				var file = file_text_open_read(SAVEFILE);
 				var target = file_text_read_real(file);
+				global.kills = file_text_read_real(file);
+				global.hasGun = file_text_read_real(file);
 				file_text_close(file);
 				scriptSlideTransition(TransictionMode.GOTO, target);
 			}

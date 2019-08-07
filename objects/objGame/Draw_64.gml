@@ -1,15 +1,25 @@
-/// @description Insert description here
-// You can write your code in this editor
 
+#region //Draw Life Bar
 if (room != roomMenu) {
 	var pc;
 	pc = (global.playerHP / global.playerMaxHP) * 100;
 	var healthBarTitle = "Life: "
-	var titleWidth = string_width(healthBarTitle);
-	var titleHeight = string_height(healthBarTitle);
 	draw_set_color(c_white);
 	draw_set_font(fMenu);
-	draw_text(titleWidth + 10, titleHeight + 25, "Life ");
-
-	draw_healthbar(10 + titleWidth, 30, titleWidth + 110, 50, pc, c_black, c_red, c_lime, 0, true, false);
+	scriptDrawSetText(c_black, fMenu, fa_left, fa_top);
+	draw_text(15, 15, healthBarTitle);
+	draw_set_color(c_white);
+	draw_text(17, 17, healthBarTitle);
+	draw_healthbar(70, 22.5, 170, 39.5, pc, c_black, c_red, c_lime, 0, true, false);
 }
+#endregion
+
+#region //Draw Score
+	if (room != roomMenu) && (instance_exists(objPlayer)) && (global.kills > 0){
+		killTextScale = max(killTextScale * 0.95, 1);
+		scriptDrawSetText(c_black, fMenu, fa_right, fa_top);
+		draw_text_transformed(RESWIDTH - 8, 12, string(global.kills) + " Pointless Murders : (", killTextScale, killTextScale, 0);
+		draw_set_color(c_white);
+		draw_text_transformed(RESWIDTH - 10, 10, string(global.kills) + " Pointless Murders : (", killTextScale, killTextScale, 0);
+	}
+#endregion
