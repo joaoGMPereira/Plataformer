@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "e292ef92-e6c6-4df2-b584-8f92cd638ad5",
+            "Value": {
+                "id": "a1cc9ed2-5fdb-4b9b-9b59-32c34d3edb56",
+                "resourcePath": "scripts\/scriptAnimationUPDown\/scriptAnimationUPDown.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e2c691a4-f0c5-4bd4-bfba-7a4fff5d9a26",
             "Value": {
                 "id": "c537947f-ee7c-4b56-8ed8-de1952f1cd66",
@@ -788,7 +796,8 @@
         "10b0c574-785c-4910-93dc-0dea00d04c35",
         "7e0590a2-b15c-450a-8804-8312154cb9ae",
         "5ce025e0-a427-45d3-b8c2-9a015adbae13",
-        "5db114bf-6165-4899-b7a9-37af593210fc"
+        "5db114bf-6165-4899-b7a9-37af593210fc",
+        "e292ef92-e6c6-4df2-b584-8f92cd638ad5"
     ],
     "tutorial": ""
 }

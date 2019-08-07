@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @desc Recovery Life
+
+#region //Recovery Life every countDown
 countdown--;
 if(countdown <= 0) {
 	countdown = countdownRate;
@@ -11,3 +12,4 @@ if(countdown <= 0) {
 		global.playerHP = global.playerMaxHP;
 	}
 }
+#endregion
