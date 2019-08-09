@@ -34,9 +34,14 @@ if(hasControl) {
 #region //Calculate moviment
 var moveHorizontal = rightKey - leftKey;
 
-horizontalSpeed = moveHorizontal * walkSpeed;
+horizontalSpeed = (moveHorizontal * walkSpeed) + gunKickX + injureKickX;
+gunKickX = 0;
+injureKickX = 0;
 
-verticalSpeed = verticalSpeed + playerGravity;
+verticalSpeed = (verticalSpeed + playerGravity) + gunKickY + injureKickY;
+gunKickY = 0;
+injureKickY = 0;
+
 //Jumping
 canJump -= 1;
 if (canJump > 0) && (jumpKey) {
@@ -70,6 +75,10 @@ y = y + verticalSpeed;
 #endregion
 
 #region Animations
+
+var aimside = sign(mouse_x - x);
+if(aimside != 0) image_xscale = aimside;
+
 //check if player isnt colliding to the wall
 if(!place_meeting(x, y+1, objWall)) {
 	//change to player sprites Jump
@@ -102,10 +111,11 @@ if(!place_meeting(x, y+1, objWall)) {
 			}
 		}
 		sprite_index = sprPlayerRun;
+		if(aimside != sign(horizontalSpeed)) {
+			sprite_index = sprPlayerRunBack;
+		}
 	}
 }
-//Check if is running to left or right
-if (horizontalSpeed != 0) image_xscale = sign(horizontalSpeed)
 
 #endregion
 

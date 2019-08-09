@@ -14,7 +14,7 @@ if(place_meeting(x, y, objParentShootable)) {
 
 
 #region //Just delete bullet when really hit the wall, and create spark
-if(place_meeting(x, y, objWall)) {
+if(place_meeting(x, y, objWall)) && (image_index != 0) {
 	#region // Move spark to edge of wall
 	while(place_meeting(x, y, objWall)) {
 		x -= lengthdir_x(1, direction);
@@ -23,6 +23,8 @@ if(place_meeting(x, y, objWall)) {
 	#endregion
 	bulletSpeed = 0;
 	instance_change(objHitSpark, true);
+	layer_add_instance("Tiles", id);
+	depth += 1;
 	
 }
 #endregion

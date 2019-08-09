@@ -29,12 +29,16 @@ if(objPlayer.controller == 0) {
 			direction = other.image_angle + irandom_range(-3,3);
 			image_angle = direction;
 		}
+		with(objPlayer) {
+			gunKickX = lengthdir_x(1.5, other.image_angle - 180);
+			gunKickY = lengthdir_y(1.0, other.image_angle - 180);
+		}
 	}
 	
 	#region //add some recoil to gun
 	recoil = max(0, recoil - 1);
 	x = x + lengthdir_x(recoil, image_angle);
-	y = y + lengthdir_x(recoil, image_angle);
+	y = y + lengthdir_y(recoil, image_angle);
 	#endregion
 
 #endregion

@@ -8,15 +8,8 @@ if(invincible == false) {
 	global.playerHP--;
 	flash = 3;
 	#region //Just move back player when is hitted
-	direction = point_direction(other.x, other.y, x, y);
-	horizontalSpeed = lengthdir_x(6, direction)
-	verticalSpeed = lengthdir_y(4, direction) -2;
-	if(!place_meeting(x + horizontalSpeed, y, objWall)) {
-	x = x + horizontalSpeed;
-		if(sign(horizontalSpeed) != 0) {
-			image_xscale = sign(horizontalSpeed);
-		}
-	}
+		injureKickX = lengthdir_x(1.5, other.image_angle);
+		injureKickY = lengthdir_y(1.0, other.image_angle);
 	#endregion
 }
 #endregion

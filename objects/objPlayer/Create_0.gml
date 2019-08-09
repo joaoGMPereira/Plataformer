@@ -7,3 +7,7 @@ hasControl = 1;
 canJump = 0;
 invincibleTimer = 30;
 invincible = false;
+gunKickX = 0;
+gunKickY = 0;
+injureKickX = 0;
+injureKickY = 0;
